@@ -48,3 +48,5 @@ if __name__ == "__main__":
     ]
 
     print(merge_sort(test_arr))
+    import benchmark
+    benchmark.benchmark(merge_sort)

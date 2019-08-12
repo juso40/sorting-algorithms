@@ -31,3 +31,5 @@ if __name__ == "__main__":
     ]
 
     print(insertion_sort(test_arr))
+    import benchmark
+    benchmark.benchmark(insertion_sort)

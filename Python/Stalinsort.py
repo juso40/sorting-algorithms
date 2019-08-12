@@ -33,4 +33,5 @@ if __name__ == "__main__":
     ]
 
     print(stalin_sort(test_arr))
-
+    import benchmark
+    benchmark.benchmark(stalin_sort)

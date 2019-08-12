@@ -40,3 +40,5 @@ if __name__ == "__main__":
         102
     ]
     print(quick_sort(test_arr))
+    import benchmark
+    benchmark.benchmark(quick_sort)

@@ -78,3 +78,5 @@ if __name__ == "__main__":
     ]
 
     print(heap_sort(test_arr))
+    import benchmark
+    benchmark.benchmark(heap_sort)
