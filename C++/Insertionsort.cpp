@@ -14,10 +14,9 @@ void insertionSort(std::vector<int> &arr){
     }
 }
 
-void printArray(std::vector<int> &arr){
-    int n = sizeof(arr) / sizeof(arr[0]);
-    for (int i = 0; i < n; i++){
-        std::cout << arr[i] << std::endl;
+void printArray(const std::vector<int>& arr){
+    for (auto const& v: arr){
+        std::cout << v << std::endl;
     }
 }
 
