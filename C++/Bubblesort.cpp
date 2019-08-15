@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 
+#include "Randomdata.cpp"
+
 void swap(int *a, int *b){
     int temp = *a;
     *a = *b;
@@ -20,7 +22,7 @@ void bubbleSort(std::vector<int> &arr){
 
 void printArray(const std::vector<int>& arr){
     for (auto const& v: arr){
-        std::cout << v << std::endl;
+        std::cout << v << " | ";
     }
 }
 
@@ -28,5 +30,13 @@ int main(){
     std::vector<int> arr = {12, 321, 12, 1, 5, 34, 27};
     bubbleSort(arr);
     printArray(arr);
+
+    std::cout << "\n\n";
+    std::vector<int> bench = randomData(5000);
+    printArray(bench);
+    std::cout << "\n\n";
+    bubbleSort(bench);
+    printArray(bench);
+
     return 0;
 }
